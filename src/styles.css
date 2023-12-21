@@ -1,0 +1,311 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'DM Serif Display', serif;
+    box-sizing: border-box;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+.containere {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(26, 26, 26);
+    height: 60px;
+    line-height: 60px;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5321db;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 0 8px 5px rgba(247, 243, 243, 0.247);
+}
+
+.navItem {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.navItem li {
+    list-style: none;
+    margin: 0 15px;
+
+}
+
+.navItem li a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navItem li:hover a {
+    color:#5321db;
+}
+
+.logo:hover,
+.social a:hover {
+    color: #f5f0f2;
+}
+
+.social a {
+    font-size: 30px;
+    color: #5321db;
+    margin: 25px 10px;
+    text-shadow: 0 8px 6px rgba(247, 243, 243, 0.149);
+}
+
+@media only screen and (max-width:1250px) {
+    .navItem {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .navItem li a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding-top: 12px;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #5321db;
+        margin: 6px 0;
+    }
+
+    .hamburger .line:hover {
+        background-color: #E74646;
+    }
+
+    .navItem {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: rgb(42, 42, 42);
+        transition: 0.5s;
+        text-align: right;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .active {
+        opacity: 1;
+    }
+
+    .navItem li a {
+        margin-bottom: 12px;
+
+    }
+
+    .social {
+        display: none;
+    }
+
+    .imgbox img {
+        display: flex;
+        height: 400px;
+        width: 400px;
+        left: 50px;
+        top: 170px;
+    }
+}
+
+
+
+
+.bottom{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(17, 68, 68); */
+    background-color: rgb(28, 28, 28);
+  }
+  footer h2{
+    color: rgb(255, 255, 255, 0.9);
+    padding-top: 30px;
+    font-size: 2em;
+  }
+  .footItem{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255, 0.9);
+  }
+  footer{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+   
+  }
+  .social2 a{
+    font-size: 30px;
+    color: white; 
+    margin: 25px 10px;
+    text-shadow:0 12px 10px rgba(15, 15, 15, 0.715);
+  }
+  .social2 a:hover{
+    color:#E74646;
+  }
+  .product{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  background-color: #f0f0f0;
+  background-image: url(http://transparenttextures.com/patterns/diamond-upholstery.png);
+  }
+  .card{
+    margin: 5% 2% 2% 5%;
+    padding: 1%;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.322);
+    transition: transform 0.3s ease-in-out;
+    background-image: url(http://transparenttextures.com/patterns/dimension.png);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .card img{
+  height: 300px;
+  width: 300px;
+  margin: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .bton{
+    color: rgb(237, 221, 221);
+    background-color: #5321db;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .bton:hover{
+    background-color: #6b42db;
+  }
+  .stock{
+    color: rgb(237, 181, 13);
+    padding-bottom: 3%;
+  }
+  .price{
+    color:greenyellow;
+    padding-bottom: 3%;
+  }
+  
+  .add{
+    background-color: #079751;
+    padding: 0% 2% 0% 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    margin-right: 3%;
+  }
+  .minus{
+    background-color: #b9081f;
+    padding: 0% 3% 0% 3%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    margin-left: 3%;
+  }
+  .add:hover{
+    background-color: #066d3b;
+  }
+  .minus:hover{
+    background-color: #900619;
+  }
+.cart{
+  width: auto;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.cart img{
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+.product-1{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  background-color: #f0f0f0;
+  background-image: url(http://transparenttextures.com/patterns/diamond-upholstery.png);
+  }
+  .card-1{
+    margin: 5%;
+    padding: 1%;
+    height: 530px;
+    width: 600px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.322);
+    transition: transform 0.3s ease-in-out;
+    background-image: url(http://transparenttextures.com/patterns/dimension.png);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .card-1 img{
+  height: 300px;
+  width: 500px;
+  margin: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .card-1:hover{
+    transform: scale(1.1);
+    background-color:rgba(25, 24, 24, 0.322);
+    background-image: url(http://transparenttextures.com/patterns/dimension.png);
+  }
+  .card:hover{
+    transform: scale(1.1);
+    background-color:rgba(25, 24, 24, 0.322);
+    background-image: url(http://transparenttextures.com/patterns/dimension.png);
+  }
